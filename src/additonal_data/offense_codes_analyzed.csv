@@ -1,0 +1,37 @@
+Range,Count,,,,,,,,,,
+ 100-200 ,251,,,100-200,Murder/Killing,,,,,100-200,Murder
+ 300-400 ,5731,,,300-400,Robbery,5731,,,,"300-400
+500-800
+1300-1400",Theft
+ 400-500 ,10600,,,400-500,Assault,10600,,,,"400-500
+800-900",Assault
+ 500-600 ,10260,,,500-600,Burglary,10260,,,,"900-1000
+1400-1500",Vandalism
+ 600-700 ,55109,,,600-700,Larceny,55109,,,,1000-1300,Fraud
+ 700-800 ,8510,,,700-800,Theft,8510,,,,1500-1600,Weapon
+ 800-900 ,20913,,,800-900,Assault/Stalking,20913,31513,,,1600-1700,Prostitution
+ 900-1000,136,,,900-1000,Arson,136,,,,1800-1900,Drugs
+1000-1100,1939,,,1000-1100,Forgery,,,,,1900-2000,Gambling
+1100-1200,15853,,,1100-1200,Fraud,,,,,2000-2100,Child Endagnerment
+1200-1300,416,,,1200-1300,Embezzlement,,,,,2100-2300,Alcohol Influence
+1300-1400,1619,,,1300-1400,Property Stolen,,,,,2400-2500,Annoying
+1400-1500,22007,,,1400-1500,Vandalism,22007,22143,,,2500-2600,Kidnapping - Enticing/Attempted
+1500-1600,2229,,,1500-1600,Weapon/Firearm carrying,,,,,2600-2700,Violation/Threat/Arrasment
+1600-1700,225,,,1600-1700,Prostitution,,,,,2900-3000,VAL
+1800-1900,18951,,,1800-1900,Drugs,,,,,3625,Racial
+1900-2000,7,,,1900-2000,Gambling,,,,,,
+2000-2100,2554,,,2000-2100,Child Endagnerment,,,2010,Home Invasion,,
+2100-2200,603,,,2100-2200,Operating under the influence (alcohol),,,,,,
+2200-2300,278,,,2200-2300,Liquor violations,,,,,,
+2400-2500,2840,,,2400-2500,Annoying,,,,,,
+2500-2600,51,,,2500-2600,Kidnapping - Enticing/Attempted,,,,,,
+2600-2700,29305,,,2600-2700,Violation/Threat/Arrasment,,,,,,
+2900-3000,9954,220775,,2900-3000,Viloation of Auto law,,,,,,
+3000-3100,39339,,,3000-3100,Death Investigation/Suicide,,,,,,
+3100-3200,70864,,,3100-3200,Investigation for another agency,,,,,,
+3200-3300,20041,,,3200-3300,Property Lost/Found,,,,,,
+3300-3400,18266,,,3300-3400,Dispute/Noisy/Riot,,,,,,
+3400-3500,17168,,,3400-3500,Animal Incidens/Custody/Escort,,,,,,
+3500-3600,12066,,,3500-3600,Missing Person,,,,,,
+3600-3700,601,3625,434,3600-3700,Racial,434,,,,,
+3800-3900,45451,,,3700-3900,M/V Accident,,,,,,

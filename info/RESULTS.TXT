@@ -1,0 +1,97 @@
+CRIME_OFFENSE_CODE_GROUP
+"Murder" : [[100, 200]],
+"TheftFraud": [[300, 400], [500, 800], [1000, 1400]],
+"Assault":[[400, 500], [800, 900],[1600, 1700], [2000, 2100], [3625, 3626]], 
+"Vandalism": [[900, 1000], [1400, 1500]],
+"Kidnapping": [[2500, 2600]],
+"Violation": [[1500, 1600], [1800, 1900], [2100, 2300], [2600, 2700], [2900, 3000]]
+
+
+Features_set = ['Lat','Long', 'DISTRICT','REPORTING_AREA','STREET','YEAR', 'MONTH','DAY_OF_WEEK','HOUR']
+
+ETC:
+-----
+Accuracy: 0.4738900667369894
+F1 score: 0.431106743490793
+
+>>> print(cmtx)
+        pred:0  pred:1  pred:2  pred:3  pred:4  pred:5
+true:0    3908   17558       2       5    8085     932
+true:1    5145   65635       3       3   14744    2035
+true:2       6      18       0       0      18       3
+true:3      27     106       0       1      83       4
+true:4    4125   27945       3       6   20360    1308
+true:5    1659   12497       0       1    4428     845
+
+
+KNN:
+Accuracy: 0.4690283971634169
+F1 score: 0.39364772312954444
+        pred:0  pred:1  pred:2  pred:3  pred:4  pred:5
+true:0    1346   21761       0       0    7366      12
+true:1    1858   71630       0       0   13980      20
+true:2       2      29       0       0      15       0
+true:3      11     149       0       0      59       0
+true:4    1716   35186       0       0   16833      27
+true:5     624   14741       0       0    4124       9
+
+DTC: maxDepth = 25, impurity='entropy', maxBins=128
+Accuracy = 0.4430864370796772
+          pred:0.0  pred:1.0  pred:2.0  pred:3.0  pred:4.0  pred:5.0
+true:0.0       863      1323         2         9       897       311
+true:1.0      1395      5658         0         7      1850       824
+true:2.0         1         0         0         0         3         0
+true:3.0         6         8         0         1        10         1
+true:4.0       902      1972         2         7      2713       392
+true:5.0       399       990         1         5       509       273
+
+RFC: numTrees = 100, maxDepth = 15, maxBins = 32, impurity="gini")
+Accuracy = 0.44165971501879575
+          pred:0.0  pred:1.0  pred:2.0  pred:3.0  pred:4.0  pred:5.0
+true:0.0       207      2363         0         0       784         6
+true:1.0       136      8372         0         0      1083         9
+true:2.0         0         5         0         0         1         0
+true:3.0         3        16         0         0         3         0
+true:4.0       113      3374         0         0      2250        10
+true:5.0        54      1739         0         0       346        11
+
+
+KNN Sampling
+Oversmapling - SMOTE: Accuracy:0.28026924563180816, F1 Score: 0.12270989139984889
+Undersampling - Cluster Centroids: Accuracy:0.28026924563180816, F1 Score: 0.12270989139984889
+Random Sampling - Oversampling Strategy: Accuracy:0.28026924563180816, F1 Score: 0.12270989139984889
+Random Sampling - Undersampling Strategy: Accuracy:0.27666607484151273, F1 Score: 0.14970450075227804
+Ensemble models(KNN, RFC): Score:0.48088752885147623
+
+
+#*********************************************************************************
+
+Severity UCR_PART
+
+ETC:
+Accuracy: 0.9694832557108006
+        pred:0  pred:1  pred:2
+true:0   85595    3950     130
+true:1    1255  144025     122
+true:2    1311    2176   54521
+
+KNN: Neighbors = 40
+Accuracy: 0.960001364791784
+        pred:0  pred:1  pred:2
+true:0   84444    5000     167
+true:1    1647  143577     173
+true:2    1727    3009   53341
+
+DTC: maxDepth = 15
+Accuracy = 0.9546458709209045
+          pred:0.0  pred:1.0  pred:2.0
+true:0.0      9388       277       276
+true:1.0       274     15649       195
+true:2.0       160       290      5961
+
+RFC: numTrees = 100, maxDepth = 15, maxBins = 32, impurity="entropy"
+Accuracy = 0.9294076730319343
+          pred:0.0  pred:1.0  pred:2.0
+true:0.0      9200       393       252
+true:1.0       357     15694       123
+true:2.0       598       533      5177
